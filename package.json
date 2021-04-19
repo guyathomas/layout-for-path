@@ -1,11 +1,27 @@
 {
-  "name": "use-page-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@guyathomas/layout-for-path",
+  "version": "0.0.4",
+  "repository": "https://github.com/guyathomas/layout-for-page",
+  "description": "Get nested layouts for a current route",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "install-peers"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8 || 17"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/react": "^17.0.3",
+    "install-peers-cli": "^2.2.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.5",
+    "typescript": "^4.2.4"
+  }
 }
