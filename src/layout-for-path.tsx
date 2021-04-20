@@ -17,7 +17,7 @@ export const LayoutForPath: React.FC<LayoutForPathProps> = ({
     () =>
       getLayouts(path, layoutSpec).reduceRight(
         (acc, Layout) => <Layout>{acc}</Layout>,
-        children
-      ) as React.ReactElement,
+        <>{children}</>
+      ),
     [path]
   );

@@ -1,6 +1,6 @@
 {
   "name": "@guyathomas/layout-for-path",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": "https://github.com/guyathomas/layout-for-page",
   "description": "Get nested layouts for a current route",
   "main": "dist/index.js",
