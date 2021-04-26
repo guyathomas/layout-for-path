@@ -1,6 +1,6 @@
 {
   "name": "@guyathomas/layout-for-path",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "repository": "https://github.com/guyathomas/layout-for-page",
   "description": "Get nested layouts for a current route",
   "main": "dist/index.js",
@@ -9,7 +9,9 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "prepare": "install-peers"
+    "prepare": "install-peers",
+    "pre:publish": "yarn && yarn build && npm pack",
+    "publish": "npm publish --access=public"
   },
   "author": "",
   "license": "ISC",
