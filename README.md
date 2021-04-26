@@ -14,7 +14,7 @@ import { useRouter } from "next/router";
 import LayoutForPage, { LayoutSpec } from "@guyathomas/layout-for-path";
 /* ... Layout Imports Omitted ... */
 
-const layouts: LayoutSpec[] = [
+const layoutSpec: LayoutSpec[] = [
   {
     pattern: "/dashboard", // my-app.com/dashboard/* would be wrapped in this
     layout: ({ children }) => (
